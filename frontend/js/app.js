@@ -156,7 +156,6 @@ class LeaderboardView {
                         <span class="username">${item.name} ${item.rank <= 3 ? '<span class="badge bg-warning">TOP</span>' : ''}</span>
                     </div>
                     <div class="score">${item.score.toLocaleString()}</div>
-                    <div class="progress">${item.progress}%</div>
                     <div class="trend ${trendClass}">${trendIcon}</div>
                 </div>
             `;
@@ -257,9 +256,9 @@ class LeaderboardController {
             }
         });
         
-        document.getElementById('sort-by').addEventListener('change', () => {
-            this.handleSort();
-        });
+        // document.getElementById('sort-by').addEventListener('change', () => {
+        //     this.handleSort();
+        // });
         
         document.getElementById('items-per-page').addEventListener('change', () => {
             this.handleItemsPerPageChange();
@@ -315,7 +314,7 @@ class LeaderboardController {
     // 处理重置
     async handleReset() {
         document.getElementById('search-input').value = '';
-        document.getElementById('sort-by').value = 'score';
+        // document.getElementById('sort-by').value = 'score';
         document.getElementById('items-per-page').value = '10';
         
         this.model.searchTerm = '';
@@ -327,13 +326,13 @@ class LeaderboardController {
     }
     
     // 处理排序
-    async handleSort() {
-        const sortBy = document.getElementById('sort-by').value;
-        this.model.sortField = sortBy;
-        this.model.currentPage = 1;
+    // async handleSort() {
+    //     const sortBy = document.getElementById('sort-by').value;
+    //     this.model.sortField = sortBy;
+    //     this.model.currentPage = 1;
         
-        await this.refreshData();
-    }
+    //     await this.refreshData();
+    // }
     
     // 处理每页显示数量变化
     async handleItemsPerPageChange() {
