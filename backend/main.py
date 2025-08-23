@@ -1,84 +1,49 @@
-# main.py
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Optional
+from typing import Optional
 import sqlite3
-import random
+from contextlib import asynccontextmanager
+from models import User, LeaderboardResponse
+from database import init_db, get_db_connection
 
-app = FastAPI(title="排行榜API", description="提供排行榜数据接口")
+# 初始化应用
+app = FastAPI(
+    title="排行榜API",
+    description="提供排行榜数据接口",
+    version="1.0.0"
+)
 
 # 允许跨域请求
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # 生产环境应限制为具体域名
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# 数据模型
-class User(BaseModel):
-    id: int
-    name: str
-    score: int
-    progress: int
-    trend: str
-    avatar: str
-    rank: int
+# 启动时初始化数据库
+@asynccontextmanager
+def startup_event(app: FastAPI):
+    init_db()
 
-class LeaderboardResponse(BaseModel):
-    data: List[User]
-    totalCount: int
-    page: int
-    pageSize: int
+@app.get("/")
+async def root():
+    return {"message": "排行榜API服务已启动", "version": "1.0.0"}
 
-# 初始化数据库
-def init_db():
-    conn = sqlite3.connect('leaderboard.db')
-    c = conn.cursor()
-    
-    # 创建表
-    c.execute('''
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY,
-            name TEXT NOT NULL,
-            score INTEGER DEFAULT 0,
-            progress INTEGER DEFAULT 0,
-            trend TEXT DEFAULT 'neutral',
-            avatar TEXT
-        )
-    ''')
-    
-    # 插入示例数据
-    names = ['小明', '小红', '小刚', '小李', '小张', '小王', '小陈', '小杨', '小赵', '小钱']
-    
-    for i in range(50):
-        name_index = i % len(names)
-        name = names[name_index] + (f"_{i//len(names)+1}" if i >= len(names) else "")
-        
-        c.execute(
-            "INSERT OR IGNORE INTO users (id, name, score, progress, trend, avatar) VALUES (?, ?, ?, ?, ?, ?)",
-            (i+1, name, random.randint(100, 10000), random.randint(0, 100), 
-             random.choice(['up', 'down', 'neutral']), f"https://i.pravatar.cc/150?u={i}")
-        )
-    
-    conn.commit()
-    conn.close()
-
-# 初始化数据库
-init_db()
+@app.get("/api/health")
+async def health_check():
+    return {"status": "healthy", "service": "leaderboard-api"}
 
 @app.get("/api/leaderboard", response_model=LeaderboardResponse)
 async def get_leaderboard(
-    page: int = Query(1, ge=1),
-    pageSize: int = Query(10, ge=1, le=100),
-    sortBy: str = Query("score"),
-    search: Optional[str] = Query(None)
+    page: int = Query(1, ge=1, description="页码"),
+    pageSize: int = Query(10, ge=1, le=100, description="每页数量"),
+    sortBy: str = Query("score", description="排序字段: score或progress"),
+    search: Optional[str] = Query(None, description="搜索关键词")
 ):
     try:
-        conn = sqlite3.connect('leaderboard.db')
-        conn.row_factory = sqlite3.Row
+        conn = get_db_connection()
         c = conn.cursor()
         
         # 构建查询
@@ -96,11 +61,8 @@ async def get_leaderboard(
             query += " ORDER BY score DESC"
         elif sortBy == "progress":
             query += " ORDER BY progress DESC"
-        
-        # 分页
-        offset = (page - 1) * pageSize
-        query += " LIMIT ? OFFSET ?"
-        params.extend([pageSize, offset])
+        else:
+            query += " ORDER BY score DESC"
         
         # 获取总数
         if search:
@@ -108,6 +70,11 @@ async def get_leaderboard(
         else:
             c.execute(count_query)
         total_count = c.fetchone()[0]
+        
+        # 分页
+        offset = (page - 1) * pageSize
+        query += " LIMIT ? OFFSET ?"
+        params.extend([pageSize, offset])
         
         # 获取数据
         c.execute(query, params)
@@ -118,20 +85,49 @@ async def get_leaderboard(
         for i, row in enumerate(rows):
             user = dict(row)
             user['rank'] = (page - 1) * pageSize + i + 1
-            users.append(user)
+            users.append(User(**user))
         
         conn.close()
+        
+        total_pages = (total_count + pageSize - 1) // pageSize
         
         return LeaderboardResponse(
             data=users,
             totalCount=total_count,
             page=page,
-            pageSize=pageSize
+            pageSize=pageSize,
+            totalPages=total_pages
         )
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"服务器错误: {str(e)}")
+
+@app.get("/api/user/{user_id}", response_model=User)
+async def get_user(user_id: int):
+    try:
+        conn = get_db_connection()
+        c = conn.cursor()
+        
+        c.execute("SELECT * FROM users WHERE id = ?", (user_id,))
+        row = c.fetchone()
+        
+        if not row:
+            raise HTTPException(status_code=404, detail="用户不存在")
+        
+        user = dict(row)
+        
+        # 计算排名
+        c.execute("SELECT COUNT(*) FROM users WHERE score > ?", (user['score'],))
+        rank = c.fetchone()[0] + 1
+        user['rank'] = rank
+        
+        conn.close()
+        
+        return User(**user)
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"服务器错误: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)

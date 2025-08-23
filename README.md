@@ -2,7 +2,7 @@
 ## 后端启动方法
 ``` C++
     cd backend
-    python3 main.py
+    uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 ## 前端启动方法
 ```C++
