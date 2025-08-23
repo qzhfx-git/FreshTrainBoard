@@ -137,7 +137,7 @@ def process_team_data(team_dict: Dict[str, Any],result_list) -> Dict[str, Any]:
         return
     for key in zmb:
         if len(str(processed[key])) == 0:
-            processed[key] = '-'
+            processed[key] = ''
         elif str(processed[key])[0] == '-':
             processed[key] = '-'
         else :

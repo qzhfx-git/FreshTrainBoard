@@ -47,6 +47,7 @@ async def get_leaderboard(
     search: Optional[str] = Query(None, description="搜索关键词")
 ):
     try:
+        get_userinfo()
         result = await data_manager.get_paginated_users(page, pageSize, sortBy, search)
         return result
     except Exception as e:
@@ -106,5 +107,5 @@ def get_userinfo():
 
 if __name__ == "__main__":
     import uvicorn
-    # get_userinfo()
+    
     uvicorn.run(app, host="0.0.0.0", port=12321, reload=True)
