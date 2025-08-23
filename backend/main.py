@@ -5,6 +5,7 @@ from datetime import datetime
 
 from models import User, LeaderboardResponse, UserCreate, UserUpdate
 from data_manager import data_manager
+from get_url import get_info
 
 Day_List = ["1001","1002","1003","1004"]
 Constest_List = []
@@ -96,9 +97,14 @@ async def update_user(user_id: int, user_data: UserUpdate):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"更新用户失败: {str(e)}")
 
-
+def get_userinfo():
+    now_list = get_info(1001)
+    print(now_list[0])
+    print(now_list[1])
+    print(now_list[2])
 
 
 if __name__ == "__main__":
     import uvicorn
+    # get_userinfo()
     uvicorn.run(app, host="0.0.0.0", port=12321, reload=True)

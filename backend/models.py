@@ -11,10 +11,10 @@ class User(BaseModel):
     # avatar: str
     rank: Optional[int] = None
     last_updated: Optional[datetime] = None
-    basescore:int
-    contestsocre:int
-    ishaveseven:bool
-    DayInfo:dict
+    basescore:int = 0
+    contestsocre:int = 0
+    ishaveseven:bool = False
+    DayInfo:dict = None
 
 class LeaderboardResponse(BaseModel):
     data: List[User]

@@ -60,7 +60,6 @@ class JSONDataManager:
                 "score": random.randint(100, 10000),
                 "progress": random.randint(0, 100),
                 "trend": random.choice(['up', 'down', 'neutral']),
-                "avatar": f"https://i.pravatar.cc/150?u={i+1000}",
                 "last_updated": (datetime.now() - timedelta(days=random.randint(0, 30))).isoformat()
             }
             users.append(user)
