@@ -61,17 +61,18 @@ body {
 
 .ranking-header {
     display: grid;
-    grid-template-columns: 100px 1fr 120px 120px 120px;
+    grid-template-columns: 100px  120px 1fr 120px 120px;
     padding: 15px 25px;
     background: var(--light-bg);
     font-weight: bold;
     border-bottom: 2px solid #dee2e6;
     color: var(--dark-bg);
+    text-align: center;
 }
 
 .ranking-item {
     display: grid;
-    grid-template-columns: 100px 1fr 120px 120px 120px;
+    grid-template-columns: 100px 120px 1fr 120px 120px;
     padding: 15px 25px;
     border-bottom: 1px solid #eee;
     transition: all 0.3s ease;

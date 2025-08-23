@@ -152,9 +152,9 @@ class LeaderboardView {
                 <div class="ranking-item">
                     <div class="rank ${rankClass}">${item.rank}</div>
                     <div class="user-info">
-                        <img src="${item.avatar}" alt="${item.name}" class="avatar">
                         <span class="username">${item.name} ${item.rank <= 3 ? '<span class="badge bg-warning">TOP</span>' : ''}</span>
                     </div>
+                    <div class="id">${item.id.toLocaleString()}</div>
                     <div class="score">${item.score.toLocaleString()}</div>
                     <div class="trend ${trendClass}">${trendIcon}</div>
                 </div>
