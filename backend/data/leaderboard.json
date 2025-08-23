@@ -1,0 +1,502 @@
+[
+  {
+    "id": 18,
+    "name": "小刚_2",
+    "score": 9853,
+    "progress": 19,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1017",
+    "last_updated": "2025-08-04T13:38:47.449204",
+    "rank": 1
+  },
+  {
+    "id": 4,
+    "name": "小李",
+    "score": 9729,
+    "progress": 70,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1003",
+    "last_updated": "2025-08-08T13:38:47.449161",
+    "rank": 2
+  },
+  {
+    "id": 46,
+    "name": "小明_4",
+    "score": 9616,
+    "progress": 38,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1045",
+    "last_updated": "2025-08-16T13:38:47.449298",
+    "rank": 3
+  },
+  {
+    "id": 8,
+    "name": "小杨",
+    "score": 9572,
+    "progress": 71,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1007",
+    "last_updated": "2025-08-17T13:38:47.449174",
+    "rank": 4
+  },
+  {
+    "id": 50,
+    "name": "小张_4",
+    "score": 9431,
+    "progress": 39,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1049",
+    "last_updated": "2025-08-01T13:38:47.449311",
+    "rank": 5
+  },
+  {
+    "id": 10,
+    "name": "小钱",
+    "score": 9418,
+    "progress": 81,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1009",
+    "last_updated": "2025-08-08T13:38:47.449180",
+    "rank": 6
+  },
+  {
+    "id": 11,
+    "name": "小孙",
+    "score": 9189,
+    "progress": 49,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1010",
+    "last_updated": "2025-07-24T13:38:47.449183",
+    "rank": 7
+  },
+  {
+    "id": 16,
+    "name": "小明_2",
+    "score": 8750,
+    "progress": 84,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1015",
+    "last_updated": "2025-08-11T13:38:47.449197",
+    "rank": 8
+  },
+  {
+    "id": 1,
+    "name": "小明",
+    "score": 8591,
+    "progress": 72,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1000",
+    "last_updated": "2025-07-25T13:38:47.449090",
+    "rank": 9
+  },
+  {
+    "id": 20,
+    "name": "小张_2",
+    "score": 8570,
+    "progress": 62,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1019",
+    "last_updated": "2025-08-14T13:38:47.449209",
+    "rank": 10
+  },
+  {
+    "id": 15,
+    "name": "小冯",
+    "score": 8202,
+    "progress": 34,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1014",
+    "last_updated": "2025-08-14T13:38:47.449193",
+    "rank": 11
+  },
+  {
+    "id": 38,
+    "name": "小杨_3",
+    "score": 8138,
+    "progress": 78,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1037",
+    "last_updated": "2025-08-16T13:38:47.449276",
+    "rank": 12
+  },
+  {
+    "id": 37,
+    "name": "小陈_3",
+    "score": 7581,
+    "progress": 98,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1036",
+    "last_updated": "2025-07-28T13:38:47.449273",
+    "rank": 13
+  },
+  {
+    "id": 29,
+    "name": "小郑_2",
+    "score": 7553,
+    "progress": 98,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1028",
+    "last_updated": "2025-08-11T13:38:47.449235",
+    "rank": 14
+  },
+  {
+    "id": 44,
+    "name": "小郑_3",
+    "score": 7050,
+    "progress": 60,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1043",
+    "last_updated": "2025-08-09T13:38:47.449293",
+    "rank": 15
+  },
+  {
+    "id": 6,
+    "name": "小王",
+    "score": 7034,
+    "progress": 29,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1005",
+    "last_updated": "2025-08-06T13:38:47.449166",
+    "rank": 16
+  },
+  {
+    "id": 25,
+    "name": "小钱_2",
+    "score": 6969,
+    "progress": 100,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1024",
+    "last_updated": "2025-08-09T13:38:47.449224",
+    "rank": 17
+  },
+  {
+    "id": 31,
+    "name": "小明_3",
+    "score": 6899,
+    "progress": 11,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1030",
+    "last_updated": "2025-07-24T13:38:47.449241",
+    "rank": 18
+  },
+  {
+    "id": 42,
+    "name": "小周_3",
+    "score": 6855,
+    "progress": 77,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1041",
+    "last_updated": "2025-08-01T13:38:47.449287",
+    "rank": 19
+  },
+  {
+    "id": 24,
+    "name": "小赵_2",
+    "score": 6779,
+    "progress": 13,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1023",
+    "last_updated": "2025-08-10T13:38:47.449221",
+    "rank": 20
+  },
+  {
+    "id": 47,
+    "name": "小红_4",
+    "score": 6679,
+    "progress": 61,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1046",
+    "last_updated": "2025-08-05T13:38:47.449301",
+    "rank": 21
+  },
+  {
+    "id": 5,
+    "name": "小张",
+    "score": 6588,
+    "progress": 95,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1004",
+    "last_updated": "2025-08-15T13:38:47.449163",
+    "rank": 22
+  },
+  {
+    "id": 12,
+    "name": "小周",
+    "score": 6504,
+    "progress": 40,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1011",
+    "last_updated": "2025-08-17T13:38:47.449186",
+    "rank": 23
+  },
+  {
+    "id": 26,
+    "name": "小孙_2",
+    "score": 5728,
+    "progress": 45,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1025",
+    "last_updated": "2025-08-02T13:38:47.449227",
+    "rank": 24
+  },
+  {
+    "id": 28,
+    "name": "小吴_2",
+    "score": 5584,
+    "progress": 60,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1027",
+    "last_updated": "2025-08-01T13:38:47.449233",
+    "rank": 25
+  },
+  {
+    "id": 49,
+    "name": "小李_4",
+    "score": 5492,
+    "progress": 80,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1048",
+    "last_updated": "2025-08-17T13:38:47.449308",
+    "rank": 26
+  },
+  {
+    "id": 19,
+    "name": "小李_2",
+    "score": 5099,
+    "progress": 63,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1018",
+    "last_updated": "2025-07-25T13:38:47.449206",
+    "rank": 27
+  },
+  {
+    "id": 22,
+    "name": "小陈_2",
+    "score": 4996,
+    "progress": 100,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1021",
+    "last_updated": "2025-08-07T13:38:47.449216",
+    "rank": 28
+  },
+  {
+    "id": 23,
+    "name": "小杨_2",
+    "score": 4583,
+    "progress": 58,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1022",
+    "last_updated": "2025-08-18T13:38:47.449219",
+    "rank": 29
+  },
+  {
+    "id": 32,
+    "name": "小红_3",
+    "score": 4377,
+    "progress": 22,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1031",
+    "last_updated": "2025-08-06T13:38:47.449243",
+    "rank": 30
+  },
+  {
+    "id": 41,
+    "name": "小孙_3",
+    "score": 4086,
+    "progress": 60,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1040",
+    "last_updated": "2025-08-18T13:38:47.449284",
+    "rank": 31
+  },
+  {
+    "id": 17,
+    "name": "小红_2",
+    "score": 3935,
+    "progress": 94,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1016",
+    "last_updated": "2025-08-11T13:38:47.449200",
+    "rank": 32
+  },
+  {
+    "id": 45,
+    "name": "小冯_3",
+    "score": 3757,
+    "progress": 96,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1044",
+    "last_updated": "2025-08-17T13:38:47.449296",
+    "rank": 33
+  },
+  {
+    "id": 7,
+    "name": "小陈",
+    "score": 3675,
+    "progress": 47,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1006",
+    "last_updated": "2025-07-24T13:38:47.449169",
+    "rank": 34
+  },
+  {
+    "id": 33,
+    "name": "小刚_3",
+    "score": 3501,
+    "progress": 79,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1032",
+    "last_updated": "2025-08-19T13:38:47.449247",
+    "rank": 35
+  },
+  {
+    "id": 39,
+    "name": "小赵_3",
+    "score": 3271,
+    "progress": 86,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1038",
+    "last_updated": "2025-07-28T13:38:47.449279",
+    "rank": 36
+  },
+  {
+    "id": 40,
+    "name": "小钱_3",
+    "score": 3235,
+    "progress": 3,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1039",
+    "last_updated": "2025-08-17T13:38:47.449281",
+    "rank": 37
+  },
+  {
+    "id": 21,
+    "name": "小王_2",
+    "score": 3195,
+    "progress": 43,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1020",
+    "last_updated": "2025-07-25T13:38:47.449213",
+    "rank": 38
+  },
+  {
+    "id": 43,
+    "name": "小吴_3",
+    "score": 3015,
+    "progress": 71,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1042",
+    "last_updated": "2025-08-16T13:38:47.449290",
+    "rank": 39
+  },
+  {
+    "id": 9,
+    "name": "小赵",
+    "score": 2568,
+    "progress": 78,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1008",
+    "last_updated": "2025-08-05T13:38:47.449177",
+    "rank": 40
+  },
+  {
+    "id": 35,
+    "name": "小张_3",
+    "score": 2450,
+    "progress": 78,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1034",
+    "last_updated": "2025-07-30T13:38:47.449267",
+    "rank": 41
+  },
+  {
+    "id": 3,
+    "name": "小刚",
+    "score": 1927,
+    "progress": 18,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1002",
+    "last_updated": "2025-08-03T13:38:47.449157",
+    "rank": 42
+  },
+  {
+    "id": 30,
+    "name": "小冯_2",
+    "score": 1868,
+    "progress": 71,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1029",
+    "last_updated": "2025-08-14T13:38:47.449238",
+    "rank": 43
+  },
+  {
+    "id": 13,
+    "name": "小吴",
+    "score": 1512,
+    "progress": 98,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1012",
+    "last_updated": "2025-08-07T13:38:47.449188",
+    "rank": 44
+  },
+  {
+    "id": 27,
+    "name": "小周_2",
+    "score": 1333,
+    "progress": 17,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1026",
+    "last_updated": "2025-08-04T13:38:47.449230",
+    "rank": 45
+  },
+  {
+    "id": 14,
+    "name": "小郑",
+    "score": 1024,
+    "progress": 95,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1013",
+    "last_updated": "2025-08-14T13:38:47.449191",
+    "rank": 46
+  },
+  {
+    "id": 2,
+    "name": "小红",
+    "score": 989,
+    "progress": 27,
+    "trend": "down",
+    "avatar": "https://i.pravatar.cc/150?u=1001",
+    "last_updated": "2025-08-05T13:38:47.449152",
+    "rank": 47
+  },
+  {
+    "id": 48,
+    "name": "小刚_4",
+    "score": 914,
+    "progress": 63,
+    "trend": "up",
+    "avatar": "https://i.pravatar.cc/150?u=1047",
+    "last_updated": "2025-08-07T13:38:47.449305",
+    "rank": 48
+  },
+  {
+    "id": 36,
+    "name": "小王_3",
+    "score": 799,
+    "progress": 84,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1035",
+    "last_updated": "2025-08-13T13:38:47.449270",
+    "rank": 49
+  },
+  {
+    "id": 34,
+    "name": "小李_3",
+    "score": 795,
+    "progress": 83,
+    "trend": "neutral",
+    "avatar": "https://i.pravatar.cc/150?u=1033",
+    "last_updated": "2025-08-07T13:38:47.449260",
+    "rank": 50
+  }
+]
