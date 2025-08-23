@@ -3,7 +3,7 @@ from typing import List, Optional
 from datetime import datetime
 
 class User(BaseModel):
-    id: int
+    id: str
     name: str
     score: int
     progress: int
@@ -20,6 +20,7 @@ class LeaderboardResponse(BaseModel):
     totalPages: int
 
 class UserCreate(BaseModel):
+    id: str
     name: str
     score: int
     progress: int

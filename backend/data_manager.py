@@ -55,7 +55,7 @@ class JSONDataManager:
             name = names[name_index] + suffix
             
             user = {
-                "id": i + 1,
+                "id": str("2510" + str(random.randint(10000000,999999999))),
                 "name": name,
                 "score": random.randint(100, 10000),
                 "progress": random.randint(0, 100),
