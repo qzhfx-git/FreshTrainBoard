@@ -1,5 +1,5 @@
 // API服务配置
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'http://106.13.45.150:12321';
 
 // API服务类
 class LeaderboardAPI {

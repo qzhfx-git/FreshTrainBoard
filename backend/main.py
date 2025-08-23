@@ -6,6 +6,9 @@ from datetime import datetime
 from models import User, LeaderboardResponse, UserCreate, UserUpdate
 from data_manager import data_manager
 
+Day_List = ["1001","1002","1003","1004"]
+Constest_List = []
+
 # 初始化应用
 app = FastAPI(
     title="排行榜API - JSON版本",
@@ -98,4 +101,4 @@ async def update_user(user_id: int, user_data: UserUpdate):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=12321, reload=True)

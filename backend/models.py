@@ -8,9 +8,13 @@ class User(BaseModel):
     score: int
     progress: int
     trend: str
-    avatar: str
+    # avatar: str
     rank: Optional[int] = None
     last_updated: Optional[datetime] = None
+    basescore:int
+    contestsocre:int
+    ishaveseven:bool
+    DayInfo:dict
 
 class LeaderboardResponse(BaseModel):
     data: List[User]
@@ -33,3 +37,11 @@ class UserUpdate(BaseModel):
     progress: Optional[int] = None
     trend: Optional[str] = None
     avatar: Optional[str] = None
+
+class BaseInfo(BaseModel):
+    A:int
+    B:int
+    C:int
+    FA:bool
+    FB:bool
+    FC:bool
