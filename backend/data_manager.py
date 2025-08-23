@@ -151,7 +151,7 @@ class JSONDataManager:
         if not search_term:
             return users
             
-        return [user for user in users if search_term.lower() in user['name'].lower()]
+        return [user for user in users if search_term.lower() in user['id'].lower()]
     
     async def get_paginated_users(self, page: int, page_size: int, sort_by: str, search: str = None) -> Dict[str, Any]:
         """获取分页用户数据"""

@@ -121,7 +121,7 @@ body {
     font-size: 1.1rem;
 }
 
-.score, .progress, .trend {
+.score, .xuehao, .trend {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,8 +134,8 @@ body {
     font-weight: 700;
 }
 
-.progress {
-    color: var(--success-color);
+.xuehao {
+    font-size: 1.1rem;
 }
 
 .up {

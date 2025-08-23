@@ -179,7 +179,7 @@ class LeaderboardView {
             html += `
                 <div class="ranking-item">
                     <div class="rank ${rankClass}">${item.rank}</div>
-                    <div class="id">${item.id.toLocaleString()}</div>
+                    <div class="xuehao">${item.id.toLocaleString()}</div>
                     <div class="user-info">
                         <span class="username">${item.name} ${item.rank <= 3 ? '<span class="badge bg-warning">TOP</span>' : ''}</span>
                     </div>
