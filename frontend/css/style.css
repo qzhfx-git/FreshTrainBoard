@@ -1,0 +1,232 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.app-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.app-header p {
+    margin: 10px 0 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.controls {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background: var(--light-bg);
+}
+
+.ranking-list {
+    padding: 0;
+    min-height: 500px;
+}
+
+.ranking-header {
+    display: grid;
+    grid-template-columns: 100px 1fr 120px 120px 120px;
+    padding: 15px 25px;
+    background: var(--light-bg);
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    color: var(--dark-bg);
+}
+
+.ranking-item {
+    display: grid;
+    grid-template-columns: 100px 1fr 120px 120px 120px;
+    padding: 15px 25px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.ranking-item:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rank {
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-1 { color: #ffc107; }
+.top-2 { color: #6c757d; }
+.top-3 { color: #fd7e14; }
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.ranking-item:hover .avatar {
+    transform: scale(1.1);
+}
+
+.username {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.score, .progress, .trend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.score {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.progress {
+    color: var(--success-color);
+}
+
+.up {
+    color: var(--success-color);
+}
+
+.down {
+    color: var(--danger-color);
+}
+
+.neutral {
+    color: var(--secondary-color);
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+.pagination-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-bg);
+    border-top: 1px solid #eee;
+}
+
+.pagination-info {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.error-message {
+    color: var(--danger-color);
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+}
+
+.empty-message {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    animation: highlight 2s ease;
+}
+
+@keyframes highlight {
+    0% { background-color: rgba(255, 217, 0, 0.5); }
+    100% { background-color: transparent; }
+}
+
+@media (max-width: 768px) {
+    .ranking-header, .ranking-item {
+        grid-template-columns: 60px 1fr 80px;
+        grid-template-rows: auto auto;
+        padding: 12px 15px;
+    }
+    
+    .rank, .user-info, .score, .progress, .trend {
+        padding: 5px 0;
+    }
+    
+    .progress, .trend {
+        grid-column: 2 / 4;
+        justify-content: start;
+    }
+    
+    .pagination-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .app-header h1 {
+        font-size: 2rem;
+    }
+    
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+}
