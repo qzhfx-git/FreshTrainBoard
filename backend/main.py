@@ -3,12 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 from datetime import datetime
 
-from models import User, LeaderboardResponse, UserCreate, UserUpdate
+from models import User, LeaderboardResponse
 from data_manager import data_manager
-from get_url import get_info
 
-Day_List = ["1001","1002","1003","1004"]
-Constest_List = []
 
 # 初始化应用
 app = FastAPI(
@@ -47,8 +44,8 @@ async def get_leaderboard(
     search: Optional[str] = Query(None, description="搜索关键词")
 ):
     try:
-        get_userinfo()
         result = await data_manager.get_paginated_users(page, pageSize, sortBy, search)
+        
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"获取数据失败: {str(e)}")
@@ -73,39 +70,10 @@ async def get_user(user_id: int):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"获取用户信息失败: {str(e)}")
 
-@app.post("/api/user", response_model=User)
-async def create_user(user_data: UserCreate):
-    """创建新用户"""
-    try:
-        user_dict = user_data.dict()
-        user = await data_manager.create_user(user_dict)
-        return user
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"创建用户失败: {str(e)}")
 
-@app.put("/api/user/{user_id}", response_model=User)
-async def update_user(user_id: int, user_data: UserUpdate):
-    """更新用户信息"""
-    try:
-        # 检查用户是否存在
-        existing_user = await data_manager.get_user(user_id)
-        if not existing_user:
-            raise HTTPException(status_code=404, detail="用户不存在")
-        
-        update_dict = {k: v for k, v in user_data.dict().items() if v is not None}
-        user = await data_manager.update_user(user_id, update_dict)
-        return user
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"更新用户失败: {str(e)}")
-
-def get_userinfo():
-    now_list = get_info(1001)
-    print(now_list[0])
-    print(now_list[1])
-    print(now_list[2])
 
 
 if __name__ == "__main__":
     import uvicorn
     
-    uvicorn.run(app, host="0.0.0.0", port=12321, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=9000, reload=True)

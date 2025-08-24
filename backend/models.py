@@ -6,7 +6,7 @@ class User(BaseModel):
     id: str
     name: str
     score: int
-    progress: int
+    # progress: int
     trend: str
     # avatar: str
     rank: Optional[int] = None
@@ -23,20 +23,6 @@ class LeaderboardResponse(BaseModel):
     pageSize: int
     totalPages: int
 
-class UserCreate(BaseModel):
-    id: str
-    name: str
-    score: int
-    progress: int
-    trend: str = "neutral"
-    avatar: Optional[str] = None
-
-class UserUpdate(BaseModel):
-    name: Optional[str] = None
-    score: Optional[int] = None
-    progress: Optional[int] = None
-    trend: Optional[str] = None
-    avatar: Optional[str] = None
 
 class BaseInfo(BaseModel):
     A:int

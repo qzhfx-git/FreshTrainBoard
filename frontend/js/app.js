@@ -1,6 +1,7 @@
 
 // API服务配置
-const API_BASE_URL = 'http://localhost:12321';
+// const API_BASE_URL = 'http://localhost:12321';
+const API_BASE_URL = 'http://106.13.45.150:9000';
 
 // 全局控制器引用
 let controller = null;

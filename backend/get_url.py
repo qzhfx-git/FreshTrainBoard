@@ -5,7 +5,6 @@ import time
 import json
 from typing import List, Dict, Any
 from collections import defaultdict
-
 def advanced_acm_scraper_to_dict(contest_url: str) -> Dict[str, Any]:
     """
     高级版ACM竞赛榜单爬虫，返回结构化的字典数据
@@ -178,10 +177,10 @@ def get_info(id:int):
         
         # 处理每支队伍的数据
         processed_teams = [process_team_data(team,result_list) for team in contest_data['teams']]
-        print(result_list[0])
-        print(result_list[1])
-        print(result_list[2])
-        print(result_list[91])
+        # print(result_list[0])
+        # print(result_list[1])
+        # print(result_list[2])
+        # # print(result_list[91])
         # print(f"已处理 {len(processed_teams)} 支队伍的数据")
         return result_list
     else:

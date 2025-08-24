@@ -1,10 +1,16 @@
 import json
+import asyncio
 import aiofiles
 import os
 from typing import List, Dict, Any
 from pathlib import Path
 from models import User
-
+import datetime
+import threading
+from get_url import get_info
+lock = threading.Lock()
+cont_list = [1001,1002,1003,1004,1005,1006,1007,1008]
+Friday = []
 class JSONDataManager:
     def __init__(self, data_file: str = "data/leaderboard.json"):
         self.data_file = data_file
@@ -15,31 +21,146 @@ class JSONDataManager:
         """确保数据目录存在"""
         self.data_dir.mkdir(exist_ok=True)
         
+
     async def read_data(self) -> List[Dict[str, Any]]:
-        """读取JSON数据"""
-        # if not os.path.exists(self.data_file):
-        #     # 如果文件不存在，创建默认数据
-        #     default_data = await self.generate_sample_data()
-        #     await self.write_data(default_data)
-        #     return default_data
-        
+        # with lock:
+        if not os.path.exists(self.data_file):
+            # lock.release()
+            await self.update_data()
+    #     # 如果文件不存在，创建默认数据
+    #     default_data = await self.generate_sample_data()
+    #     await self.write_data(default_data)
+    #     return default_data
         try:
             async with aiofiles.open(self.data_file, 'r', encoding='utf-8') as f:
+                # lock.acquire()
+                # update_data()
                 content = await f.read()
-                return json.loads(content) if content else []
+                result = json.loads(content) if content else []
+                # lock.release()
+                return result
         except (json.JSONDecodeError, FileNotFoundError):
+            lock.release()
             return []
     
     async def write_data(self, data: List[Dict[str, Any]]) -> bool:
-        """写入JSON数据"""
-        try:
-            async with aiofiles.open(self.data_file, 'w', encoding='utf-8') as f:
-                await f.write(json.dumps(data, ensure_ascii=False, indent=2))
-            return True
-        except Exception as e:
-            print(f"写入数据失败: {e}")
-            return False
+        with lock:
+            try:
+                if os.path.exists(self.data_file):
+                    os.rename(self.data_file,self.data_file + str(datatime.now()))
+
+                async with aiofiles.open(self.data_file, 'w', encoding='utf-8') as f:
+                    await f.write(json.dumps(data, ensure_ascii=False, indent=2))
+                return True
+            except Exception as e:
+                print(f"写入数据失败: {e}")
+                return False
     
+    async def update_data(self):
+        # 将字符串转换为datetime对象
+        # contest_list = [(1001,0),(1002,0),(1003,0),(1004,0),(1005,0),(1006,0),(1007,0),(1008,0)]
+        d1 = datetime.datetime.strptime('2025-08-23', '%Y-%m-%d')
+        d2 = datetime.datetime.strptime(str(datetime.date.today()), '%Y-%m-%d')
+        print(str(datetime.date.today()))
+        # 计算两个日期之间的差值
+        delta = int(str(d2 - d1).split()[0]) - 1
+        # print(delta)
+        users = []
+        if os.path.exists(self.data_file):
+            user = self.read_data()
+        uid = cont_list[delta]
+        # print(uid)
+        info = get_info(uid)
+        # print(info)
+        if uid not in Friday:
+            At = ""
+            Bt = ""
+            Ct = ""
+            print(uid)
+            for role in info:
+                if (role['A'] != "" and role['A'] != "-" and At == "") or (role['A'] != "" and role['A'] != "-" and At > role['A']):
+                    At = role['A']
+                if (role['B'] != "" and role['B'] != "-" and Bt == "") or (role['B'] != "" and role['B'] != "-" and Bt > role['B']):
+                    Bt = role['B']
+                if (role['C'] != "" and role['C'] != "-" and Ct == "") or (role['C'] != "" and role['C'] != "-" and Ct >  role['C']):
+                    # print(role)
+                    Ct = role['C']
+            print(At)
+            print(Bt)
+            print(Ct)
+            for role in info:
+                
+                
+                fenshu = 0
+                ok = 0
+                tishu = 0
+                if role['A'] == '-':
+                    fenshu += 1
+                elif role['A'] != "":
+                    fenshu += 5
+                    tishu += 1
+
+                if role['A'] == At:
+                    fenshu += 5
+
+                if role['B'] == '-':
+                    fenshu += 1
+                elif role['B'] != "":
+                    fenshu += 5
+                    tishu += 1
+                if role['B'] == Bt:
+                    fenshu += 5
+
+                if role['C'] == '-':
+                    fenshu += 1
+                elif role['C'] != "":
+                    fenshu += 10
+                    tishu += 1
+                if role['C'] == Ct:
+                    fenshu += 5    
+            
+                for user in users:
+                    if user['id'] == role['用户']:
+                        ok = 1
+                        user['basescore'] += fenshu
+                        if tishu == 3:
+                            user['DayInfo'] += '1'
+                        break;
+                if ok == 0:
+                    user = {
+                        "id":role['用户'],
+                        "name":role['昵称'],
+                        "score": 0,
+                        "trend": 'up',
+                        "contestsocre":0,
+                        "ishaveseven":False,
+                        "basescore":0,
+                        "DayInfo":"",
+                        "rank":-1
+                    }
+                    user['basescore'] = fenshu
+                    if tishu == 3:
+                        user['DayInfo'] = '1'
+                    users.append(user)
+            for user in users:
+                user['score'] = user['contestsocre'] + user['basescore']
+                if user['ishaveseven'] == True:
+                    user['score'] += 20
+                # print(user) 
+                elif len(user['DayInfo'])>=7 and str(user['DayInfo']).find("1111111") != -1:
+                    user['ishaveseven'] = True
+                    user['score'] += 20
+            users.sort(key=lambda x: x['score'], reverse=True)
+            for i, user in enumerate(users):
+                user['rank'] = i + 1
+            
+            await self.write_data(users)
+            return
+        else:
+            return
+        
+
+
     async def generate_sample_data(self) -> List[Dict[str, Any]]:
         """生成示例数据"""
         import random
@@ -96,8 +217,8 @@ class JSONDataManager:
     
     async def get_paginated_users(self, page: int, page_size: int, sort_by: str, search: str = None) -> Dict[str, Any]:
         """获取分页用户数据"""
+        # await data_manager.update_data()
         users = await self.search_users(search) if search else await self.read_data()
-        
         # 排序
         if sort_by == "progress":
             users.sort(key=lambda x: x['progress'], reverse=True)
@@ -122,3 +243,4 @@ class JSONDataManager:
 
 # 创建全局数据管理器实例
 data_manager = JSONDataManager()
+# asyncio.run(data_manager.update_data())
