@@ -14,7 +14,7 @@ class User(BaseModel):
     basescore:int = 0
     contestsocre:int = 0
     ishaveseven:bool = False
-    DayInfo:dict = None
+    DayInfo:str = ""
 
 class LeaderboardResponse(BaseModel):
     data: List[User]

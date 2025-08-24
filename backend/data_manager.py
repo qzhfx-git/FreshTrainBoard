@@ -17,12 +17,12 @@ class JSONDataManager:
         
     async def read_data(self) -> List[Dict[str, Any]]:
         """读取JSON数据"""
-        if not os.path.exists(self.data_file):
-            # 如果文件不存在，创建默认数据
-            default_data = await self.generate_sample_data()
-            await self.write_data(default_data)
-            return default_data
-            
+        # if not os.path.exists(self.data_file):
+        #     # 如果文件不存在，创建默认数据
+        #     default_data = await self.generate_sample_data()
+        #     await self.write_data(default_data)
+        #     return default_data
+        
         try:
             async with aiofiles.open(self.data_file, 'r', encoding='utf-8') as f:
                 content = await f.read()
@@ -85,64 +85,6 @@ class JSONDataManager:
                 return user
         return None
     
-    async def create_user(self, user_data: Dict[str, Any]) -> Dict[str, Any]:
-        """创建新用户"""
-        users = await self.read_data()
-        
-        # 生成新ID
-        new_id = max((user['id'] for user in users), default=0) + 1
-        
-        user = {
-            "id": new_id,
-            "name": user_data['name'],
-            "score": user_data['score'],
-            "progress": user_data['progress'],
-            "trend": user_data.get('trend', 'neutral'),
-            "avatar": user_data.get('avatar', f"https://i.pravatar.cc/150?u={new_id}"),
-            "last_updated": datetime.now().isoformat(),
-            "rank": None  # 将在排序后计算
-        }
-        
-        users.append(user)
-        # 重新排序并计算排名
-        users.sort(key=lambda x: x['score'], reverse=True)
-        for i, u in enumerate(users):
-            u['rank'] = i + 1
-        
-        await self.write_data(users)
-        return user
-    
-    async def update_user(self, user_id: int, update_data: Dict[str, Any]) -> Dict[str, Any]:
-        """更新用户"""
-        users = await self.read_data()
-        
-        for user in users:
-            if user['id'] == user_id:
-                for key, value in update_data.items():
-                    if value is not None and key in user:
-                        user[key] = value
-                user['last_updated'] = datetime.now().isoformat()
-                break
-        
-        # 重新排序并计算排名
-        users.sort(key=lambda x: x['score'], reverse=True)
-        for i, user in enumerate(users):
-            user['rank'] = i + 1
-        
-        await self.write_data(users)
-        return await self.get_user(user_id)
-    
-    async def delete_user(self, user_id: int) -> bool:
-        """删除用户"""
-        users = await self.read_data()
-        users = [user for user in users if user['id'] != user_id]
-        
-        # 重新计算排名
-        users.sort(key=lambda x: x['score'], reverse=True)
-        for i, user in enumerate(users):
-            user['rank'] = i + 1
-        
-        return await self.write_data(users)
     
     async def search_users(self, search_term: str) -> List[Dict[str, Any]]:
         """搜索用户"""
