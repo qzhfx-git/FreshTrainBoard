@@ -125,6 +125,8 @@ class JSONDataManager:
                         user['basescore'] += fenshu
                         if tishu == 3:
                             user['DayInfo'] += '1'
+                        else:
+                            user['DayInfo'] += '0'
                         break;
                 if ok == 0:
                     user = {
@@ -151,8 +153,17 @@ class JSONDataManager:
                     user['ishaveseven'] = True
                     user['score'] += 20
             users.sort(key=lambda x: x['score'], reverse=True)
+            idx = 0
+            pre = 0
+            prerank = 0
             for i, user in enumerate(users):
-                user['rank'] = i + 1
+                idx += 1
+                if user['score'] == pre:
+                    user['rank'] = prerank   
+                else :
+                    user['rank'] = idx
+                pre = user['score']
+                prerank = user['rank']
             
             await self.write_data(users)
             return
