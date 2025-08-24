@@ -8,6 +8,11 @@ from models import User
 import datetime
 import threading
 from get_url import get_info
+import asyncio
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from apscheduler.triggers.cron import CronTrigger
+# from datetime import datetime
+import pytz
 lock = threading.Lock()
 cont_list = [1001,1002,1003,1004,1005,1006,1007,1008]
 Friday = []
@@ -16,6 +21,18 @@ class JSONDataManager:
         self.data_file = data_file
         self.data_dir = Path("data")
         self.ensure_data_directory()
+        import uvicorn
+        scheduler = AsyncIOScheduler()
+        
+        # 使用上海时区（UTC+8）
+        scheduler.add_job(
+            self.update_data,
+            trigger=CronTrigger(hour=0, minute=30, timezone='Asia/Shanghai'),
+            id='daily_task',
+            replace_existing=True
+        )
+        scheduler.start()
+        print("调度器已启动，将在每天00:30执行任务")
         
     def ensure_data_directory(self):
         """确保数据目录存在"""
@@ -26,6 +43,7 @@ class JSONDataManager:
         # with lock:
         if not os.path.exists(self.data_file):
             # lock.release()
+            # print("11111")
             await self.update_data()
     #     # 如果文件不存在，创建默认数据
     #     default_data = await self.generate_sample_data()
@@ -143,6 +161,8 @@ class JSONDataManager:
                     user['basescore'] = fenshu
                     if tishu == 3:
                         user['DayInfo'] = '1'
+                    else :
+                        user['DayInfo'] = '0'
                     users.append(user)
             for user in users:
                 user['score'] = user['contestsocre'] + user['basescore']
