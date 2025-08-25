@@ -27,12 +27,12 @@ class JSONDataManager:
         # 使用上海时区（UTC+8）
         scheduler.add_job(
             self.update_data,
-            trigger=CronTrigger(hour=0, minute=30, timezone='Asia/Shanghai'),
+            trigger=CronTrigger(hour=21, minute=44, timezone='Asia/Shanghai'),
             id='daily_task',
             replace_existing=True
         )
         scheduler.start()
-        print("调度器已启动，将在每天00:30执行任务")
+        print("调度器已启动，将在每天21:30执行任务")
         
     def ensure_data_directory(self):
         """确保数据目录存在"""
@@ -65,7 +65,7 @@ class JSONDataManager:
         with lock:
             try:
                 if os.path.exists(self.data_file):
-                    os.rename(self.data_file,self.data_file + str(datatime.now()))
+                    os.rename(self.data_file,"data/leaderboard" + str(datetime.date.today()) + ".json" )
 
                 async with aiofiles.open(self.data_file, 'w', encoding='utf-8') as f:
                     await f.write(json.dumps(data, ensure_ascii=False, indent=2))
@@ -85,8 +85,9 @@ class JSONDataManager:
         # print(delta)
         users = []
         if os.path.exists(self.data_file):
-            user = self.read_data()
+            users = await self.read_data()
         uid = cont_list[delta]
+        # print(user)
         # print(uid)
         info = get_info(uid)
         # print(info)
@@ -178,12 +179,19 @@ class JSONDataManager:
             prerank = 0
             for i, user in enumerate(users):
                 idx += 1
+                prefab = int(user['rank'])
                 if user['score'] == pre:
                     user['rank'] = prerank   
                 else :
                     user['rank'] = idx
                 pre = user['score']
                 prerank = user['rank']
+                if prefab > user['rank']:
+                    user['trend'] = 'up'
+                elif prefab < user['rank']:
+                    user['trend'] = 'down'
+                else:
+                    user['trend'] = 'neutral'
             
             await self.write_data(users)
             return
