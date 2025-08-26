@@ -14,7 +14,7 @@ from apscheduler.triggers.cron import CronTrigger
 # from datetime import datetime
 import pytz
 lock = threading.Lock()
-cont_list = [1001,1002,1003,1004,1005,1006,1007,1008]
+cont_list = [1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012]
 Friday = []
 class JSONDataManager:
     def __init__(self, data_file: str = "data/leaderboard.json"):
@@ -27,7 +27,7 @@ class JSONDataManager:
         # 使用上海时区（UTC+8）
         scheduler.add_job(
             self.update_data,
-            trigger=CronTrigger(hour=21, minute=44, timezone='Asia/Shanghai'),
+            trigger=CronTrigger(hour=12, minute=00, timezone='Asia/Shanghai'),
             id='daily_task',
             replace_existing=True
         )
