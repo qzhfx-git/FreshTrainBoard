@@ -2,640 +2,563 @@
   {
     "id": "2510011042",
     "name": "陈劲霄",
-    "score": 155,
+    "score": 130,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 155,
-    "DayInfo": "111111",
+    "basescore": 130,
+    "DayInfo": "11111",
     "rank": 1
   },
   {
     "id": "2510831012",
     "name": "冯运",
-    "score": 135,
-    "trend": "neutral",
+    "score": 115,
+    "trend": "down",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 135,
-    "DayInfo": "111111",
+    "basescore": 115,
+    "DayInfo": "11111",
     "rank": 2
-  },
-  {
-    "id": "2510041046",
-    "name": "胡源",
-    "score": 131,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 131,
-    "DayInfo": "101111",
-    "rank": 3
   },
   {
     "id": "2510831025",
     "name": "王小鸣",
-    "score": 125,
-    "trend": "down",
+    "score": 105,
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 125,
-    "DayInfo": "111111",
-    "rank": 4
+    "basescore": 105,
+    "DayInfo": "11111",
+    "rank": 3
   },
   {
     "id": "2510051080",
     "name": "房桉旭",
-    "score": 125,
-    "trend": "down",
+    "score": 105,
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 125,
-    "DayInfo": "111111",
-    "rank": 4
+    "basescore": 105,
+    "DayInfo": "11111",
+    "rank": 3
   },
   {
     "id": "2510831046",
     "name": "惠识中",
-    "score": 125,
-    "trend": "down",
+    "score": 105,
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 125,
-    "DayInfo": "111111",
-    "rank": 4
+    "basescore": 105,
+    "DayInfo": "11111",
+    "rank": 3
   },
   {
     "id": "2510041054",
     "name": "王庆耀",
-    "score": 125,
-    "trend": "down",
+    "score": 105,
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 125,
-    "DayInfo": "111111",
-    "rank": 4
+    "basescore": 105,
+    "DayInfo": "11111",
+    "rank": 3
+  },
+  {
+    "id": "2510041046",
+    "name": "胡源",
+    "score": 101,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 101,
+    "DayInfo": "10111",
+    "rank": 7
   },
   {
     "id": "2510831056",
     "name": "叶凌云",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510011036",
     "name": "牛欣平",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051084",
     "name": "李和旭",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051072",
     "name": "谢俊洁",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510831042",
     "name": "丁一哲",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510011029",
     "name": "闫铭哲",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051030",
     "name": "周迅",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051028",
     "name": "杨贺",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051056",
     "name": "徐天旭",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510831052",
     "name": "任浩喆",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510041002",
     "name": "侯豪艺",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510051039",
+    "name": "王淑婷",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510201011",
     "name": "张馨心",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510831058",
     "name": "张家森",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510041021",
     "name": "尚梦威",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510201004",
     "name": "李青琳",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051016",
     "name": "赵子雨",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051031",
     "name": "楚梦雅",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510831011",
     "name": "崔家聪",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051053",
     "name": "吴宇智",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510201022",
     "name": "孙恩哲",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510051029",
     "name": "张鑫铭",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831033",
+    "name": "刘珂冰",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510831036",
     "name": "全静",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510831024",
     "name": "王崇鑫",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
   },
   {
     "id": "2510011050",
     "name": "隆鲁滨",
-    "score": 120,
+    "score": 100,
     "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
+    "basescore": 100,
+    "DayInfo": "11111",
     "rank": 8
-  },
-  {
-    "id": "2510201060",
-    "name": "张鹏宇",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831021",
-    "name": "刘昕蔚",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831039",
-    "name": "张韶涵",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831035",
-    "name": "钱文涵",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510201016",
-    "name": "霍振",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510011009",
-    "name": "肖梓璇",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510051090",
-    "name": "张成龙",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510051086",
-    "name": "李旭阳",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831009",
-    "name": "赵彤彤",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831019",
-    "name": "黎梓铭",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831004",
-    "name": "刘子轩",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831038",
-    "name": "谢晨雨",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510831001",
-    "name": "何惠",
-    "score": 120,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 120,
-    "DayInfo": "111111",
-    "rank": 8
-  },
-  {
-    "id": "2510201037",
-    "name": "田楚琳",
-    "score": 116,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 116,
-    "DayInfo": "111110",
-    "rank": 45
-  },
-  {
-    "id": "2510201039",
-    "name": "张骧忆",
-    "score": 116,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 116,
-    "DayInfo": "111011",
-    "rank": 45
-  },
-  {
-    "id": "2510051039",
-    "name": "王淑婷",
-    "score": 111,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 111,
-    "DayInfo": "111110",
-    "rank": 47
-  },
-  {
-    "id": "2510051025",
-    "name": "汤智鸿",
-    "score": 110,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 110,
-    "DayInfo": "111110",
-    "rank": 48
-  },
-  {
-    "id": "2510201046",
-    "name": "董凯歌",
-    "score": 106,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 106,
-    "DayInfo": "011011",
-    "rank": 49
-  },
-  {
-    "id": "2510831033",
-    "name": "刘珂冰",
-    "score": 105,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 105,
-    "DayInfo": "111110",
-    "rank": 50
-  },
-  {
-    "id": "2510201015",
-    "name": "胡玉卿",
-    "score": 102,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 102,
-    "DayInfo": "111010",
-    "rank": 51
   },
   {
     "id": "2510201027",
     "name": "余梦煊",
     "score": 100,
-    "trend": "down",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 100,
     "DayInfo": "11111",
-    "rank": 52
+    "rank": 8
   },
   {
-    "id": "2510831026",
-    "name": "王玉勃",
+    "id": "2510201060",
+    "name": "张鹏宇",
     "score": 100,
-    "trend": "up",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 100,
     "DayInfo": "11111",
-    "rank": 52
+    "rank": 8
   },
   {
-    "id": "2510831060",
-    "name": "张一铭",
-    "score": 96,
-    "trend": "down",
+    "id": "2510831021",
+    "name": "刘昕蔚",
+    "score": 100,
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 96,
-    "DayInfo": "111010",
-    "rank": 54
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
   },
   {
-    "id": "2510831059",
-    "name": "张荣阔",
+    "id": "2510831039",
+    "name": "张韶涵",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831035",
+    "name": "钱文涵",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510051025",
+    "name": "汤智鸿",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510201016",
+    "name": "霍振",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510011009",
+    "name": "肖梓璇",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510051090",
+    "name": "张成龙",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510051086",
+    "name": "李旭阳",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831009",
+    "name": "赵彤彤",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510201037",
+    "name": "田楚琳",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831019",
+    "name": "黎梓铭",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831004",
+    "name": "刘子轩",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831038",
+    "name": "谢晨雨",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510831001",
+    "name": "何惠",
+    "score": 100,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 100,
+    "DayInfo": "11111",
+    "rank": 8
+  },
+  {
+    "id": "2510201039",
+    "name": "张骧忆",
     "score": 96,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 96,
-    "DayInfo": "001111",
-    "rank": 54
+    "DayInfo": "11101",
+    "rank": 50
   },
   {
-    "id": "2510201033",
-    "name": "刘家颖",
-    "score": 95,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 95,
-    "DayInfo": "111100",
-    "rank": 56
-  },
-  {
-    "id": "2510051537",
-    "name": "齐雪菲",
-    "score": 94,
+    "id": "2510201015",
+    "name": "胡玉卿",
+    "score": 91,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 94,
-    "DayInfo": "011011",
-    "rank": 57
-  },
-  {
-    "id": "2510011040",
-    "name": "于淑晴",
-    "score": 92,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 92,
-    "DayInfo": "111100",
-    "rank": 58
+    "basescore": 91,
+    "DayInfo": "11101",
+    "rank": 51
   },
   {
     "id": "2510011057",
@@ -646,40 +569,73 @@
     "ishaveseven": false,
     "basescore": 90,
     "DayInfo": "11110",
-    "rank": 59
+    "rank": 52
   },
   {
-    "id": "2510051019",
-    "name": "周悦然",
+    "id": "2510201033",
+    "name": "刘家颖",
     "score": 90,
     "trend": "down",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 90,
-    "DayInfo": "111000",
-    "rank": 59
+    "DayInfo": "11110",
+    "rank": 52
+  },
+  {
+    "id": "2510831060",
+    "name": "张一铭",
+    "score": 90,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 90,
+    "DayInfo": "11101",
+    "rank": 52
   },
   {
     "id": "2510041061",
     "name": "朱宵含",
     "score": 87,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 87,
     "DayInfo": "00101",
-    "rank": 61
+    "rank": 55
   },
   {
-    "id": "2510201007",
-    "name": "孙正晓",
-    "score": 84,
+    "id": "2510011040",
+    "name": "于淑晴",
+    "score": 86,
+    "trend": "down",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 86,
+    "DayInfo": "11110",
+    "rank": 56
+  },
+  {
+    "id": "2510201046",
+    "name": "董凯歌",
+    "score": 86,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 84,
-    "DayInfo": "001010",
-    "rank": 62
+    "basescore": 86,
+    "DayInfo": "01101",
+    "rank": 56
+  },
+  {
+    "id": "2510051019",
+    "name": "周悦然",
+    "score": 85,
+    "trend": "down",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 85,
+    "DayInfo": "11100",
+    "rank": 58
   },
   {
     "id": "2510201043",
@@ -690,51 +646,40 @@
     "ishaveseven": false,
     "basescore": 81,
     "DayInfo": "11100",
-    "rank": 63
+    "rank": 59
   },
   {
-    "id": "2510011028",
-    "name": "王泽楷",
+    "id": "2510831026",
+    "name": "王玉勃",
     "score": 80,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 80,
     "DayInfo": "1111",
-    "rank": 64
+    "rank": 60
   },
   {
-    "id": "2510051062",
-    "name": "丁楚芳",
-    "score": 80,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 80,
-    "DayInfo": "1111",
-    "rank": 64
-  },
-  {
-    "id": "2510041036",
-    "name": "文心仪",
+    "id": "2510831059",
+    "name": "张荣阔",
     "score": 76,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 76,
-    "DayInfo": "111000",
-    "rank": 66
+    "DayInfo": "00111",
+    "rank": 61
   },
   {
-    "id": "2510201010",
-    "name": "詹贺雅",
-    "score": 73,
+    "id": "2510051537",
+    "name": "齐雪菲",
+    "score": 74,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 73,
-    "DayInfo": "001010",
-    "rank": 67
+    "basescore": 74,
+    "DayInfo": "01101",
+    "rank": 62
   },
   {
     "id": "2510041052",
@@ -745,18 +690,29 @@
     "ishaveseven": false,
     "basescore": 71,
     "DayInfo": "11100",
-    "rank": 68
+    "rank": 63
+  },
+  {
+    "id": "2510041036",
+    "name": "文心仪",
+    "score": 71,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 71,
+    "DayInfo": "11100",
+    "rank": 63
   },
   {
     "id": "2510831010",
     "name": "宗秋彦",
     "score": 71,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 71,
     "DayInfo": "1011",
-    "rank": 68
+    "rank": 63
   },
   {
     "id": "2510011033",
@@ -767,7 +723,7 @@
     "ishaveseven": false,
     "basescore": 70,
     "DayInfo": "1110",
-    "rank": 70
+    "rank": 66
   },
   {
     "id": "2510831032",
@@ -778,18 +734,18 @@
     "ishaveseven": false,
     "basescore": 70,
     "DayInfo": "1110",
-    "rank": 70
+    "rank": 66
   },
   {
-    "id": "2510011056",
-    "name": "王梦可",
-    "score": 70,
-    "trend": "neutral",
+    "id": "2510201007",
+    "name": "孙正晓",
+    "score": 68,
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 70,
-    "DayInfo": "110000",
-    "rank": 70
+    "basescore": 68,
+    "DayInfo": "00101",
+    "rank": 68
   },
   {
     "id": "2510051014",
@@ -800,18 +756,29 @@
     "ishaveseven": false,
     "basescore": 66,
     "DayInfo": "1110",
-    "rank": 73
+    "rank": 69
   },
   {
-    "id": "2510051040",
-    "name": "王爽",
+    "id": "2510011056",
+    "name": "王梦可",
     "score": 65,
     "trend": "down",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 65,
-    "DayInfo": "1110",
-    "rank": 74
+    "DayInfo": "11000",
+    "rank": 70
+  },
+  {
+    "id": "2510201010",
+    "name": "詹贺雅",
+    "score": 63,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 63,
+    "DayInfo": "00101",
+    "rank": 71
   },
   {
     "id": "2510041003",
@@ -822,18 +789,40 @@
     "ishaveseven": false,
     "basescore": 60,
     "DayInfo": "111",
-    "rank": 75
+    "rank": 72
   },
   {
-    "id": "2510201034",
-    "name": "刘静蕊",
+    "id": "2510051040",
+    "name": "王爽",
+    "score": 60,
+    "trend": "down",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 60,
+    "DayInfo": "111",
+    "rank": 72
+  },
+  {
+    "id": "2510011028",
+    "name": "王泽楷",
     "score": 60,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 60,
-    "DayInfo": "00001",
-    "rank": 75
+    "DayInfo": "111",
+    "rank": 72
+  },
+  {
+    "id": "2510051062",
+    "name": "丁楚芳",
+    "score": 60,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 60,
+    "DayInfo": "111",
+    "rank": 72
   },
   {
     "id": "2510051017",
@@ -844,51 +833,18 @@
     "ishaveseven": false,
     "basescore": 51,
     "DayInfo": "001",
-    "rank": 77
-  },
-  {
-    "id": "2510831030",
-    "name": "朱红蕾",
-    "score": 46,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 46,
-    "DayInfo": "0011",
-    "rank": 78
-  },
-  {
-    "id": "2510831040",
-    "name": "张思佳",
-    "score": 45,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 45,
-    "DayInfo": "110",
-    "rank": 79
-  },
-  {
-    "id": "2510831051",
-    "name": "刘森煜",
-    "score": 45,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 45,
-    "DayInfo": "001",
-    "rank": 79
+    "rank": 76
   },
   {
     "id": "2510011052",
     "name": "欧新昊",
     "score": 42,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 42,
     "DayInfo": "1000",
-    "rank": 81
+    "rank": 77
   },
   {
     "id": "2510051059",
@@ -899,7 +855,7 @@
     "ishaveseven": false,
     "basescore": 40,
     "DayInfo": "11",
-    "rank": 82
+    "rank": 78
   },
   {
     "id": "2510051042",
@@ -910,7 +866,7 @@
     "ishaveseven": false,
     "basescore": 40,
     "DayInfo": "11",
-    "rank": 82
+    "rank": 78
   },
   {
     "id": "2510041059",
@@ -921,7 +877,18 @@
     "ishaveseven": false,
     "basescore": 40,
     "DayInfo": "11",
-    "rank": 82
+    "rank": 78
+  },
+  {
+    "id": "2510831040",
+    "name": "张思佳",
+    "score": 40,
+    "trend": "down",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 40,
+    "DayInfo": "11",
+    "rank": 78
   },
   {
     "id": "2510011034",
@@ -932,40 +899,40 @@
     "ishaveseven": false,
     "basescore": 40,
     "DayInfo": "100",
-    "rank": 82
+    "rank": 78
   },
   {
     "id": "2510201020",
     "name": "阮浩文",
     "score": 40,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 40,
     "DayInfo": "10000",
-    "rank": 82
+    "rank": 78
   },
   {
-    "id": "2510831055",
-    "name": "邬丰阳",
-    "score": 39,
+    "id": "2510201034",
+    "name": "刘静蕊",
+    "score": 40,
     "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
-    "basescore": 39,
-    "DayInfo": "000000",
-    "rank": 87
+    "basescore": 40,
+    "DayInfo": "0000",
+    "rank": 78
   },
   {
     "id": "2510011011",
     "name": "邢祎恬",
     "score": 36,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 36,
     "DayInfo": "10",
-    "rank": 88
+    "rank": 85
   },
   {
     "id": "2510831044",
@@ -976,40 +943,18 @@
     "ishaveseven": false,
     "basescore": 35,
     "DayInfo": "001",
-    "rank": 89
-  },
-  {
-    "id": "2510051021",
-    "name": "董智诚",
-    "score": 35,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 35,
-    "DayInfo": "000",
-    "rank": 89
+    "rank": 86
   },
   {
     "id": "2510011022",
     "name": "莫昌印",
-    "score": 34,
-    "trend": "down",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 34,
-    "DayInfo": "000000",
-    "rank": 91
-  },
-  {
-    "id": "2510201056",
-    "name": "郗原乾",
     "score": 31,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 31,
-    "DayInfo": "0100",
-    "rank": 92
+    "DayInfo": "00000",
+    "rank": 87
   },
   {
     "id": "2510051065",
@@ -1020,7 +965,7 @@
     "ishaveseven": false,
     "basescore": 30,
     "DayInfo": "10",
-    "rank": 93
+    "rank": 88
   },
   {
     "id": "2510041010",
@@ -1031,18 +976,40 @@
     "ishaveseven": false,
     "basescore": 30,
     "DayInfo": "10",
-    "rank": 93
+    "rank": 88
   },
   {
-    "id": "2510051026",
-    "name": "王思源",
+    "id": "2510201056",
+    "name": "郗原乾",
     "score": 30,
-    "trend": "up",
+    "trend": "down",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 30,
-    "DayInfo": "10",
-    "rank": 93
+    "DayInfo": "010",
+    "rank": 88
+  },
+  {
+    "id": "2510831055",
+    "name": "邬丰阳",
+    "score": 29,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 29,
+    "DayInfo": "00000",
+    "rank": 91
+  },
+  {
+    "id": "2510831030",
+    "name": "朱红蕾",
+    "score": 26,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 26,
+    "DayInfo": "001",
+    "rank": 92
   },
   {
     "id": "2510201047",
@@ -1053,7 +1020,7 @@
     "ishaveseven": false,
     "basescore": 25,
     "DayInfo": "10",
-    "rank": 96
+    "rank": 93
   },
   {
     "id": "2510831027",
@@ -1064,7 +1031,7 @@
     "ishaveseven": false,
     "basescore": 25,
     "DayInfo": "10",
-    "rank": 96
+    "rank": 93
   },
   {
     "id": "2510041005",
@@ -1075,7 +1042,18 @@
     "ishaveseven": false,
     "basescore": 25,
     "DayInfo": "0000",
-    "rank": 96
+    "rank": 93
+  },
+  {
+    "id": "2510831051",
+    "name": "刘森煜",
+    "score": 25,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 25,
+    "DayInfo": "00",
+    "rank": 93
   },
   {
     "id": "2510011031",
@@ -1086,7 +1064,7 @@
     "ishaveseven": false,
     "basescore": 21,
     "DayInfo": "01",
-    "rank": 99
+    "rank": 97
   },
   {
     "id": "2510201054",
@@ -1097,7 +1075,7 @@
     "ishaveseven": false,
     "basescore": 21,
     "DayInfo": "01",
-    "rank": 99
+    "rank": 97
   },
   {
     "id": "2510831022",
@@ -1108,7 +1086,7 @@
     "ishaveseven": false,
     "basescore": 20,
     "DayInfo": "1",
-    "rank": 101
+    "rank": 99
   },
   {
     "id": "2510011043",
@@ -1119,7 +1097,7 @@
     "ishaveseven": false,
     "basescore": 20,
     "DayInfo": "1",
-    "rank": 101
+    "rank": 99
   },
   {
     "id": "2510831016",
@@ -1130,13 +1108,35 @@
     "ishaveseven": false,
     "basescore": 20,
     "DayInfo": "1",
-    "rank": 101
+    "rank": 99
+  },
+  {
+    "id": "2510051026",
+    "name": "王思源",
+    "score": 20,
+    "trend": "down",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 20,
+    "DayInfo": "1",
+    "rank": 99
+  },
+  {
+    "id": "2510051021",
+    "name": "董智诚",
+    "score": 20,
+    "trend": "up",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 20,
+    "DayInfo": "00",
+    "rank": 99
   },
   {
     "id": "2510041024",
     "name": "田新宇",
     "score": 17,
-    "trend": "neutral",
+    "trend": "down",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 17,
@@ -1147,33 +1147,11 @@
     "id": "2510011048",
     "name": "刘洋",
     "score": 16,
-    "trend": "neutral",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 16,
-    "DayInfo": "00",
-    "rank": 105
-  },
-  {
-    "id": "2510041038",
-    "name": "张洋",
-    "score": 16,
-    "trend": "up",
-    "contestsocre": 0,
-    "ishaveseven": false,
-    "basescore": 16,
-    "DayInfo": "0000",
-    "rank": 105
-  },
-  {
-    "id": "2510011058",
-    "name": "姚舒恒",
-    "score": 16,
     "trend": "down",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 16,
-    "DayInfo": "0",
+    "DayInfo": "00",
     "rank": 105
   },
   {
@@ -1185,7 +1163,7 @@
     "ishaveseven": false,
     "basescore": 15,
     "DayInfo": "00",
-    "rank": 108
+    "rank": 106
   },
   {
     "id": "2510831018",
@@ -1196,29 +1174,29 @@
     "ishaveseven": false,
     "basescore": 15,
     "DayInfo": "00",
-    "rank": 108
+    "rank": 106
   },
   {
     "id": "2510831041",
     "name": "李世俍",
     "score": 15,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 15,
     "DayInfo": "000",
-    "rank": 108
+    "rank": 106
   },
   {
     "id": "2510011002",
     "name": "蒋瑞鑫",
     "score": 15,
-    "trend": "down",
+    "trend": "up",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 15,
     "DayInfo": "00",
-    "rank": 108
+    "rank": 106
   },
   {
     "id": "2510201017",
@@ -1229,7 +1207,18 @@
     "ishaveseven": false,
     "basescore": 12,
     "DayInfo": "0000",
-    "rank": 112
+    "rank": 110
+  },
+  {
+    "id": "2510041038",
+    "name": "张洋",
+    "score": 11,
+    "trend": "neutral",
+    "contestsocre": 0,
+    "ishaveseven": false,
+    "basescore": 11,
+    "DayInfo": "000",
+    "rank": 111
   },
   {
     "id": "2510041033",
@@ -1240,7 +1229,7 @@
     "ishaveseven": false,
     "basescore": 10,
     "DayInfo": "0",
-    "rank": 113
+    "rank": 112
   },
   {
     "id": "2510041019",
@@ -1251,7 +1240,7 @@
     "ishaveseven": false,
     "basescore": 7,
     "DayInfo": "00",
-    "rank": 114
+    "rank": 113
   },
   {
     "id": "2510051051",
@@ -1262,7 +1251,7 @@
     "ishaveseven": false,
     "basescore": 6,
     "DayInfo": "0",
-    "rank": 115
+    "rank": 114
   },
   {
     "id": "2510051010",
@@ -1273,7 +1262,7 @@
     "ishaveseven": false,
     "basescore": 6,
     "DayInfo": "0",
-    "rank": 115
+    "rank": 114
   },
   {
     "id": "2510051079",
@@ -1284,7 +1273,7 @@
     "ishaveseven": false,
     "basescore": 6,
     "DayInfo": "0",
-    "rank": 115
+    "rank": 114
   },
   {
     "id": "2510051064",
@@ -1295,7 +1284,7 @@
     "ishaveseven": false,
     "basescore": 5,
     "DayInfo": "0",
-    "rank": 118
+    "rank": 117
   },
   {
     "id": "2510051001",
@@ -1306,7 +1295,7 @@
     "ishaveseven": false,
     "basescore": 5,
     "DayInfo": "0",
-    "rank": 118
+    "rank": 117
   },
   {
     "id": "2510041007",
@@ -1317,7 +1306,7 @@
     "ishaveseven": false,
     "basescore": 5,
     "DayInfo": "0",
-    "rank": 118
+    "rank": 117
   },
   {
     "id": "2510011026",
@@ -1328,61 +1317,61 @@
     "ishaveseven": false,
     "basescore": 5,
     "DayInfo": "0",
-    "rank": 118
+    "rank": 117
   },
   {
     "id": "2510041045",
     "name": "郭文浩",
     "score": 1,
-    "trend": "down",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 1,
     "DayInfo": "0",
-    "rank": 122
+    "rank": 121
   },
   {
     "id": "2510041037",
     "name": "肖若男",
     "score": 0,
-    "trend": "down",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 0,
     "DayInfo": "0",
-    "rank": 123
+    "rank": 122
   },
   {
     "id": "2510201012",
     "name": "张依彤",
     "score": 0,
-    "trend": "down",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 0,
     "DayInfo": "0",
-    "rank": 123
+    "rank": 122
   },
   {
     "id": "2510201049",
     "name": "贾华龙",
     "score": 0,
-    "trend": "down",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 0,
     "DayInfo": "0",
-    "rank": 123
+    "rank": 122
   },
   {
     "id": "2510041034",
     "name": "李知晏",
     "score": 0,
-    "trend": "down",
+    "trend": "neutral",
     "contestsocre": 0,
     "ishaveseven": false,
     "basescore": 0,
     "DayInfo": "0",
-    "rank": 123
+    "rank": 122
   }
 ]

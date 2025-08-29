@@ -14,8 +14,9 @@ from apscheduler.triggers.cron import CronTrigger
 # from datetime import datetime
 import pytz
 lock = threading.Lock()
-cont_list = [1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012]
-Friday = []
+cont_list = [1001,1002,1003,1004,1005,1006,1007,1009,1010,1011,1012]
+Friday = [1008]
+problem = ['A','B','C','D','E','F']
 class JSONDataManager:
     def __init__(self, data_file: str = "data/leaderboard.json"):
         self.data_file = data_file
@@ -74,6 +75,39 @@ class JSONDataManager:
                 print(f"写入数据失败: {e}")
                 return False
     
+
+    async def Load_Contest_Source(self,users):
+        for user in users:
+            user['contestsocre'] = 0
+        for tid in Friday:
+            info = get_info(tid)
+            for role in info:
+                fenshu = 0
+                for pb in problem:
+                    if (role[pb] != "" and role[pb] != "-"):
+                        fenshu += 5
+                ok = 0
+                for user in users:
+                    if user['id'] == role['用户']:
+                        ok = 1
+                        user['contestsocre'] += fenshu
+                        break;
+                if ok == 0:
+                    user = {
+                        "id":role['用户'],
+                        "name":role['昵称'],
+                        "score": 0,
+                        "trend": 'up',
+                        "contestsocre":fenshu,
+                        "ishaveseven":False,
+                        "basescore":0,
+                        "DayInfo":"",
+                        "rank":-1
+                    }
+                    users.append(user)
+        
+
+
     async def update_data(self):
         # 将字符串转换为datetime对象
         # contest_list = [(1001,0),(1002,0),(1003,0),(1004,0),(1005,0),(1006,0),(1007,0),(1008,0)]
@@ -86,6 +120,7 @@ class JSONDataManager:
         users = []
         if os.path.exists(self.data_file):
             users = await self.read_data()
+        await self.Load_Contest_Source(users)
         uid = cont_list[delta]
         # print(user)
         # print(uid)
